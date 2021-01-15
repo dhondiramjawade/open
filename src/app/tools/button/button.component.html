@@ -1,0 +1,17 @@
+<ng-container [ngSwitch]="type">
+  <ng-container *ngSwitchCase="'STROKED'">
+    <button mat-stroked-button color="primary">
+      {{ value }}
+    </button>
+  </ng-container>
+  <ng-container *ngSwitchCase="'RAISED'">
+    <button mat-raised-button color="primary">
+      {{ value }}
+    </button>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <button mat-button color="primary">
+      {{ value }}
+    </button>
+  </ng-container>
+</ng-container>
