@@ -1,9 +1,9 @@
-<div fxFill class="page">
+<div fxFill class="page" fxFlex="column">
   <div class="page-header">
     <mat-toolbar>
-      <div fxLayout="row" fxLayoutAlign="center ">
+      <div fxFlex fxLayout="row" fxLayoutAlign="center center">
         <img [style.height]="'64px'" src="./../assets/logo/logo.png" alt="" />
-        <span fxFlex></span>
+        <div fxFlex></div>
         <div fxLayout="row" fxLayoutGap="1em" fxLayoutAlign="center center">
           <app-button [value]="'Product'"> </app-button>
           <app-button [value]="'Solution'"> </app-button>
@@ -14,6 +14,75 @@
       </div>
     </mat-toolbar>
   </div>
-  <div class="page-content"></div>
+  <div class="page-content" fxLayout="column" fxLayoutAlign="space-around">
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div fxLayout="column">
+        <div class="headline">We make it Super Simple</div>
+        <span class="divider"></span>
+        <img
+          class="hand"
+          src="./../assets/collect_img-video/collect_img-video.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div fxFlex></div>
+      <img class="eligibility" src="./../assets/Group 6.svg" alt="" srcset="" />
+    </div>
+    <div fxLayout="row">
+      <div fxFlex="50">
+        <div fxLayout="row" fxLayoutGap="2em">
+          <div class="first" fxLayout="column" fxLayoutGap="2em">
+            <app-card>
+              <div subHeader>Quick cash disbursement</div>
+              <div content>
+                Get terms loans that your business needs within 72 hrs
+              </div>
+            </app-card>
+            <app-card>
+              <div subHeader>Quick cash disbursement</div>
+              <div content>
+                Get terms loans that your business needs within 72 hrs
+              </div>
+            </app-card>
+            <app-card>
+              <div subHeader>Quick cash disbursement</div>
+              <div content>
+                Get terms loans that your business needs within 72 hrs
+              </div>
+            </app-card>
+          </div>
+          <div
+            class="second"
+            fxLayout="column"
+            fxLayoutGap="2em"
+            fxLayoutAlign="center center"
+          >
+            <app-card>
+              <div subHeader>Quick cash disbursement</div>
+              <div content>
+                Get terms loans that your business needs within 72 hrs
+              </div>
+            </app-card>
+            <app-card>
+              <div subHeader>Quick cash disbursement</div>
+              <div content>
+                Get terms loans that your business needs within 72 hrs
+              </div>
+            </app-card>
+          </div>
+        </div>
+      </div>
+      <div fxFlex="50" fxLayout="column" fxLayoutAlign="center" class="account">
+        <div fxFlex="15" class="headline2">Boost your business with Open</div>
+        <span class="divider2"></span>
+        <div fxFlex="15" class="sub-headline">
+          Get your hands on a term loan that’s crafted for your business
+        </div>
+        <app-button [type]="'STROKED'" [value]="'Get an Open Account'">
+        </app-button>
+      </div>
+    </div>
+  </div>
   <div class="page-body"></div>
 </div>

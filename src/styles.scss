@@ -52,6 +52,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  // transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
 }
 
 /**
@@ -85,4 +86,13 @@ $primary: #663399;
 
 .example-spacer {
   flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: transparent !important;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  padding: 0em !important;
 }
